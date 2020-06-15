@@ -99,7 +99,7 @@ number_of_victories=0
 while true; do
   read command
   if [[ "$command" = "start" ]]; then
-    if [[ "$(($RANDOM % 100))" -lt "100" && number_of_victories -lt "2" ]]; then
+    if [[ "$(($RANDOM % 100))" -lt "20" && number_of_victories -lt "2" ]]; then
       winning_comb
       ((number_of_victories++))
     else
